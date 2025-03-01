@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display bg-white text-gray-500 grid place-content-center ">
+                <!-- account balance  -->
+                <div class="stats shadow mb-4 ">
+                    <div class="stat">
+                        <div class="stat-title text-center text-xl">Account Balance</div>
+                        <div id="balance" class="stat-value text-center">9400</div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-1 mb-4">
+                    <button class="btn">Add Money</button>
+                    <button class="btn">Transaction</button>
+                    <button class="btn">Cash Out</button>
+                </div>
+                <!-- form section  -->
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Amount</label>
+                            <input id="add-money-input" type="text" class="input input-bordered"
+                                placeholder="Enter Amount" />
+                            <label class="fieldset-label">Pin</label>
+                            <input id="add-money-pin-number" type="password" class="input input-bordered"
+                                placeholder="Enter Pin" />
+
+                            <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/addMoney.js"></script>
+</body>
+
+</html>

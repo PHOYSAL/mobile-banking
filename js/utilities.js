@@ -1,0 +1,1 @@
+console.log('mobile banking with js')
