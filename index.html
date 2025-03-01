@@ -22,12 +22,12 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-3 gap-1 mb-4">
-                    <button class="btn">Add Money</button>
-                    <button class="btn">Transaction</button>
-                    <button class="btn">Cash Out</button>
+                    <button id="add-money-feature-btn" class="btn">Add Money</button>
+                    <button  class="btn">Transaction</button>
+                    <button id="cash-out-feature-btn" class="btn">Cash Out</button>
                 </div>
                 <!-- add money form section start  -->
-                <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="add-money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="fieldset-label">Amount</label>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <!-- cash out from start here  -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="fieldset-label">Amount</label>
@@ -62,6 +62,7 @@
     <script src="./js/utilities.js"></script>
     <script src="./js/addMoney.js"></script>
     <script src="./js/cashout.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 
 </html>
