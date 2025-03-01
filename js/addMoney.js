@@ -10,6 +10,11 @@ document.getElementById('btn-add-money')
         const balance=getTextFieldValue('balance')
         const newBalance=balance+addMoney;
         document.getElementById('balance').innerText=newBalance;
+
+        const p=document.createElement('p')
+        p.innerText=`Added: ${addMoney} tk. Balance: ${newBalance}`;
+        
+        document.getElementById('transaction-container').appendChild(p);
     }
     else{
         alert('Please try again');

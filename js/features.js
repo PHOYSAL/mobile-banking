@@ -6,3 +6,7 @@ document.getElementById('cash-out-feature-btn')
 .addEventListener('click',function(){
     showFeature('cash-out-form')
 })
+document.getElementById('transaction-btn')
+.addEventListener('click',function(){
+    showFeature('transaction-history')
+})

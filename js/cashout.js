@@ -10,6 +10,11 @@ document.getElementById('btn-cash-out')
         const balance=getTextFieldValue('balance')
         const newBalance=balance-cashOut;
         document.getElementById('balance').innerText=newBalance;
+
+        const p=document.createElement('p')
+        p.innerText=`Added: ${cashOut} tk. Balance: ${newBalance}`;
+        
+        document.getElementById('transaction-container').appendChild(p);
     }
     else{
         alert('Please try again');
